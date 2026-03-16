@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "query": "Is there a significant difference in blood pressure between males and females?",
+        "expected_intent": "compare two independent groups",
+        "expected_repeated": false
+    },
+    {
+        "id": 2,
+        "query": "Does reaction time change across the three testing sessions?",
+        "expected_intent": "compare repeated measures or paired data",
+        "expected_repeated": true
+    },
+    {
+        "id": 3,
+        "query": "What variables best predict patient recovery time?",
+        "expected_intent": "predict outcome using regression",
+        "expected_repeated": false
+    },
+    {
+        "id": 4,
+        "query": "Are age and income correlated in this sample?",
+        "expected_intent": "find correlation between two variables",
+        "expected_repeated": false
+    },
+    {
+        "id": 5,
+        "query": "Is the score normally distributed?",
+        "expected_intent": "test normality of a distribution",
+        "expected_repeated": false
+    },
+    {
+        "id": 6,
+        "query": "Do the three treatment groups differ in anxiety scores?",
+        "expected_intent": "compare three or more groups",
+        "expected_repeated": false
+    },
+    {
+        "id": 7,
+        "query": "Does smoking status depend on education level?",
+        "expected_intent": "test independence between categorical variables",
+        "expected_repeated": false
+    },
+    {
+        "id": 8,
+        "query": "Did scores improve after the intervention compared to before?",
+        "expected_intent": "compare repeated measures or paired data",
+        "expected_repeated": true
+    },
+    {
+        "id": 9,
+        "query": "Which drug performs better in reducing symptoms?",
+        "expected_intent": "compare two independent groups",
+        "expected_repeated": false
+    },
+    {
+        "id": 10,
+        "query": "Is there a relationship between hours of sleep and test performance?",
+        "expected_intent": "find correlation between two variables",
+        "expected_repeated": false
+    },
+    {
+        "id": 11,
+        "query": "significant",
+        "expected_intent": null,
+        "expected_ambiguous": true
+    },
+    {
+        "id": 12,
+        "query": "test the data",
+        "expected_intent": null,
+        "expected_ambiguous": true
+    }
+]
