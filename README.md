@@ -124,7 +124,7 @@ pytest tests/ -v
 **Atta ul Asad**  
 COMSATS University Islamabad, Vehari Campus, Pakistan  
 GSoC 2026 AStats applicant — INCF Project #33  
-GitHub: [your GitHub]  
+GitHub: https://github.com/attaulasad
 
 ---
 
