@@ -70,5 +70,143 @@
         "query": "test the data",
         "expected_intent": null,
         "expected_ambiguous": true
+    },
+    {
+        "id": 13,
+        "query": "Is the BOLD signal difference between left and right hemispheres significant?",
+        "expected_intent": "compare two independent groups",
+        "expected_repeated": false
+    },
+    {
+        "id": 14,
+        "query": "Does cortical thickness change across the three patient groups?",
+        "expected_intent": "compare three or more groups",
+        "expected_repeated": false
+    },
+    {
+        "id": 15,
+        "query": "Are EEG alpha power values normally distributed in the resting state?",
+        "expected_intent": "test normality of a distribution",
+        "expected_repeated": false
+    },
+    {
+        "id": 16,
+        "query": "Do fMRI activation levels differ before and after the cognitive training?",
+        "expected_intent": "compare repeated measures or paired data",
+        "expected_repeated": true
+    },
+    {
+        "id": 17,
+        "query": "Is there a relationship between grey matter volume and IQ score?",
+        "expected_intent": "find correlation between two variables",
+        "expected_repeated": false
+    },
+    {
+        "id": 18,
+        "query": "What brain regions predict working memory performance?",
+        "expected_intent": "predict outcome using regression",
+        "expected_repeated": false
+    },
+    {
+        "id": 19,
+        "query": "Does diagnosis category depend on hemisphere of lesion?",
+        "expected_intent": "test independence between categorical variables",
+        "expected_repeated": false
+    },
+    {
+        "id": 20,
+        "query": "Is there a significant difference in cholesterol levels between the drug and placebo groups?",
+        "expected_intent": "compare two independent groups",
+        "expected_repeated": false
+    },
+    {
+        "id": 21,
+        "query": "Do pain scores decrease from baseline to week 4 and week 8?",
+        "expected_intent": "compare repeated measures or paired data",
+        "expected_repeated": true
+    },
+    {
+        "id": 22,
+        "query": "Does recovery time depend on treatment type across the four clinical sites?",
+        "expected_intent": "compare three or more groups",
+        "expected_repeated": false
+    },
+    {
+        "id": 23,
+        "query": "Is BMI correlated with systolic blood pressure in hypertensive patients?",
+        "expected_intent": "find correlation between two variables",
+        "expected_repeated": false
+    },
+    {
+        "id": 24,
+        "query": "Does drug adherence category depend on age group?",
+        "expected_intent": "test independence between categorical variables",
+        "expected_repeated": false
+    },
+    {
+        "id": 25,
+        "query": "Did anxiety scores improve after the eight-week mindfulness intervention?",
+        "expected_intent": "compare repeated measures or paired data",
+        "expected_repeated": true
+    },
+    {
+        "id": 26,
+        "query": "Do the four personality types differ in risk tolerance scores?",
+        "expected_intent": "compare three or more groups",
+        "expected_repeated": false
+    },
+    {
+        "id": 27,
+        "query": "Are cognitive flexibility scores normally distributed in ADHD children?",
+        "expected_intent": "test normality of a distribution",
+        "expected_repeated": false
+    },
+    {
+        "id": 28,
+        "query": "What factors predict academic performance in undergraduate students?",
+        "expected_intent": "predict outcome using regression",
+        "expected_repeated": false
+    },
+    {
+        "id": 29,
+        "query": "Which group scored higher, males or females?",
+        "expected_intent": "compare two independent groups",
+        "expected_repeated": false
+    },
+    {
+        "id": 30,
+        "query": "Does the treatment work better than the control?",
+        "expected_intent": "compare two independent groups",
+        "expected_repeated": false
+    },
+    {
+        "id": 31,
+        "query": "Are these two variables related to each other?",
+        "expected_intent": "find correlation between two variables",
+        "expected_repeated": false
+    },
+    {
+        "id": 32,
+        "query": "Is this data normal?",
+        "expected_intent": "test normality of a distribution",
+        "expected_repeated": false
+    },
+    {
+        "id": 33,
+        "query": "analyse my results",
+        "expected_intent": null,
+        "expected_ambiguous": true
+    },
+    {
+        "id": 34,
+        "query": "is it significant",
+        "expected_intent": null,
+        "expected_ambiguous": true
+    },
+    {
+        "id": 35,
+        "query": "compare",
+        "expected_intent": null,
+        "expected_ambiguous": true
     }
 ]
