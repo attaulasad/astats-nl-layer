@@ -85,6 +85,24 @@ def run_benchmark():
         f"({correct}/{total_with_label} queries with labels)\n"
     )
 
+from collections import defaultdict
+
+# After running all queries, compute per-category metrics
+true_labels = []
+pred_labels = []
+
+for item in benchmark_queries:
+    if item.get("expected_ambiguous"):
+        continue  # skip ambiguous queries for intent F1
+    true_labels.append(item["expected_intent"])
+    result = pipeline.run(item["query"])
+    pred_labels.append(result["intent"]["predicted_intent"])
+
+# Per-category precision, recall, F1
+from sklearn.metrics import classification_report
+print(classification_report(true_labels, pred_labels, 
+                             labels=INTENT_LABELS, 
+                             target_names=INTENT_LABELS))
 
 if __name__ == "__main__":
     run_benchmark()
